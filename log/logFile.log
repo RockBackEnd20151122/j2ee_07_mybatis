@@ -21,3 +21,23 @@
 01/31 16:43:01 [DEBUG] JdbcTransaction: Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77847718]
 01/31 16:43:01 [DEBUG] JdbcTransaction: Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@77847718]
 01/31 16:43:01 [DEBUG] PooledDataSource: Returned connection 2005169944 to pool.
+01/31 18:54:08 [DEBUG] LogFactory: Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+01/31 18:54:08 [DEBUG] PooledDataSource: PooledDataSource forcefully closed/removed all connections.
+01/31 18:54:08 [DEBUG] PooledDataSource: PooledDataSource forcefully closed/removed all connections.
+01/31 18:54:08 [DEBUG] PooledDataSource: PooledDataSource forcefully closed/removed all connections.
+01/31 18:54:08 [DEBUG] PooledDataSource: PooledDataSource forcefully closed/removed all connections.
+01/31 18:54:37 [DEBUG] LogFactory: Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+01/31 18:54:37 [DEBUG] PooledDataSource: PooledDataSource forcefully closed/removed all connections.
+01/31 18:54:37 [DEBUG] PooledDataSource: PooledDataSource forcefully closed/removed all connections.
+01/31 18:54:37 [DEBUG] PooledDataSource: PooledDataSource forcefully closed/removed all connections.
+01/31 18:54:37 [DEBUG] PooledDataSource: PooledDataSource forcefully closed/removed all connections.
+01/31 18:54:37 [DEBUG] JdbcTransaction: Opening JDBC Connection
+01/31 18:54:37 [DEBUG] PooledDataSource: Created connection 883151184.
+01/31 18:54:37 [DEBUG] JdbcTransaction: Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@34a3d150]
+01/31 18:54:37 [DEBUG] insert: ==>  Preparing: insert into userMybatis(user_id,user_name,password,status) values( ?, ?, ?, ? ) 
+01/31 18:54:37 [DEBUG] insert: ==> Parameters: 2f07b5cc-10d4-4b60-99f2-56c006e2047f(String), yang(String), 123456(String), 01(String)
+01/31 18:54:37 [DEBUG] insert: <==    Updates: 1
+01/31 18:54:37 [DEBUG] JdbcTransaction: Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@34a3d150]
+01/31 18:54:37 [DEBUG] JdbcTransaction: Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@34a3d150]
+01/31 18:54:37 [DEBUG] JdbcTransaction: Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@34a3d150]
+01/31 18:54:37 [DEBUG] PooledDataSource: Returned connection 883151184 to pool.
