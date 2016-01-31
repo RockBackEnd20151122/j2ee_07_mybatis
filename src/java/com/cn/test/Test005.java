@@ -36,6 +36,23 @@ public class Test005 {
 			user.setUserId("0e3dee23-a282-4bcb-b5c2-94fbd86bec54");
 			user = sqlSession.selectOne("lizhiUser.select", user);
 			System.out.println(">>>>>>>>>>>>>>>>" + user.getPassword());
+			
+			List<User> listss = sqlSession.selectList("lizhiUser.select", user);
+			for( User auser : listss  ){
+				System.out.println( "all:"+ auser.getUserName());
+			}
+
+			List<User> listAgain = sqlSession.selectList("lizhiUser.selectAgain", user);
+			for (User userTemp : listAgain ) {
+				System.out.println("select again:"+userTemp.getUserName() );
+			}
+			
+			List<User> list = sqlSession.selectList("lizhiUser.selectByParam", "0e3dee23-a282-4bcb-b5c2-94fbd86bec54");
+			for (User userTemp : list ) {
+				System.out.println(userTemp.getUserName() );
+			}
+
+			System.out.println(">>>>>>>>>>>>>>>>" + user.getPassword());
 
 		} catch (Exception e) {
 			e.printStackTrace();

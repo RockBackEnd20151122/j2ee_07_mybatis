@@ -1,0 +1,23 @@
+01/31 16:43:01 [DEBUG] LogFactory: Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+01/31 16:43:01 [DEBUG] PooledDataSource: PooledDataSource forcefully closed/removed all connections.
+01/31 16:43:01 [DEBUG] PooledDataSource: PooledDataSource forcefully closed/removed all connections.
+01/31 16:43:01 [DEBUG] PooledDataSource: PooledDataSource forcefully closed/removed all connections.
+01/31 16:43:01 [DEBUG] PooledDataSource: PooledDataSource forcefully closed/removed all connections.
+01/31 16:43:01 [DEBUG] JdbcTransaction: Opening JDBC Connection
+01/31 16:43:01 [DEBUG] PooledDataSource: Created connection 2005169944.
+01/31 16:43:01 [DEBUG] JdbcTransaction: Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77847718]
+01/31 16:43:01 [DEBUG] selectCount: ==>  Preparing: select count(*) from userMybatis 
+01/31 16:43:01 [DEBUG] selectCount: ==> Parameters: 
+01/31 16:43:01 [DEBUG] selectCount: <==      Total: 1
+01/31 16:43:01 [DEBUG] select: ==>  Preparing: select ut.user_id, ut.user_name, ut.password, ut.status from userMybatis ut WHERE ut.user_id=? 
+01/31 16:43:01 [DEBUG] select: ==> Parameters: 0e3dee23-a282-4bcb-b5c2-94fbd86bec54(String)
+01/31 16:43:01 [DEBUG] select: <==      Total: 1
+01/31 16:43:01 [DEBUG] selectAgain: ==>  Preparing: select ut.user_id userId, ut.user_name userName, ut.password password, ut.status status from userMybatis ut WHERE ut.user_id=? 
+01/31 16:43:01 [DEBUG] selectAgain: ==> Parameters: 0e3dee23-a282-4bcb-b5c2-94fbd86bec54(String)
+01/31 16:43:01 [DEBUG] selectAgain: <==      Total: 1
+01/31 16:43:01 [DEBUG] selectByParam: ==>  Preparing: select ut.user_id userId, ut.user_name userName, ut.password password, ut.status status from userMybatis ut WHERE ut.user_id=? 
+01/31 16:43:01 [DEBUG] selectByParam: ==> Parameters: 0e3dee23-a282-4bcb-b5c2-94fbd86bec54(String)
+01/31 16:43:01 [DEBUG] selectByParam: <==      Total: 1
+01/31 16:43:01 [DEBUG] JdbcTransaction: Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77847718]
+01/31 16:43:01 [DEBUG] JdbcTransaction: Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@77847718]
+01/31 16:43:01 [DEBUG] PooledDataSource: Returned connection 2005169944 to pool.
